@@ -1042,10 +1042,10 @@ export default class Com extends wepy.component {
 
     data = {};
     
-    methods = {};
 
-    // events对象中所声明的函数为用于监听组件之间的通信与交互事件的事件处理函数
-    events = {
+
+    // 对象中所声明的函数为用于监听组件之间的通信与交互事件的事件处理函数
+    methods = {
         'some-event': (p1, p2, p3, $event) => {
                console.log(`${this.$name} receive ${$event.name} from ${$event.source.$name}`);
         }
